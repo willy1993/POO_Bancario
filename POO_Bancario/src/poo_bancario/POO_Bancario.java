@@ -18,7 +18,7 @@ public class POO_Bancario {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        JOptionPane.showMessageDialog(null,"Si Funciono Esta Hu.........");
+        JOptionPane.showMessageDialog(null,"Si Funciono El Programa");
         
     }
     
