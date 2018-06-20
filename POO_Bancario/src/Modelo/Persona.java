@@ -15,22 +15,6 @@ public abstract class Persona {
     private String nombre;
     private String apellido;
 
-    public Persona() {
-    }
-
-    
-    public Persona(int id) {
-        this.id = id;
-    }
-
-    
-    public void mostrar() {
-        System.out.println(String.format("El Titular De La Cuenta -->%s",id));        
-        System.out.println(String.format("Nombre Es.- %s, %s   #C.I.-, %s", nombre,apellido,cedula));
-    }
-    
-
-
     public int getId() {
         return id;
     }
@@ -71,7 +55,10 @@ public abstract class Persona {
     }
     
     
-
+    public void mostrar() {
+        System.out.println(String.format("El Titular De La Cuenta   Id-->%s",id));        
+        System.out.println(String.format("Nombre Es.- %s, %s   #C.I.-, %s", nombre,apellido,cedula));
+    }
     
     
 }
