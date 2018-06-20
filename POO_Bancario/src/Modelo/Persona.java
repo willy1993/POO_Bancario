@@ -7,7 +7,7 @@ package Modelo;
 
 /**
  *
- * @author PC-1
+* @author Willy
  */
 public abstract class Persona {
     private int id;
