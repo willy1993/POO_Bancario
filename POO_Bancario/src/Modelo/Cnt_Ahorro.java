@@ -5,18 +5,15 @@
  */
 package Modelo;
 
-
-
 /**
  *
  * @author Willy
  */
-public class Cnt_Corriente extends Persona {
+public class Cnt_Ahorro extends Persona {
     private String fechacreacion;
     private String Saldo;
     private String Estado;
     private String NumerodeCuenta;
-    
 
     public String getFechacreacion() {
         return fechacreacion;
@@ -50,32 +47,33 @@ public class Cnt_Corriente extends Persona {
         this.NumerodeCuenta = NumerodeCuenta;
     }
 
-
-//Creacion del Constructor para Envir todos los datos en uno solo 
-    public Cnt_Corriente(String fechacreacion, String Saldo, String Estado, String NumerodeCuenta, int id, String cedula, String nombre, String apellido) {
+    public Cnt_Ahorro(String fechacreacion, String Saldo, String Estado, String NumerodeCuenta, int id, String cedula, String nombre, String apellido) {
         super(id, cedula, nombre, apellido);
         this.fechacreacion = fechacreacion;
         this.Saldo = Saldo;
         this.Estado = Estado;
         this.NumerodeCuenta = NumerodeCuenta;
     }
-
     
     
     
-    
-
-    
-    @Override
+        @Override
     public void mostrar() {
         super.mostrar(); //To change body of generated methods, choose Tools | Templates.
-        System.out.println("---> Ctn Corrientes");
+        System.out.println("---> Ctn Ahorro");
         System.out.println(String.format("#Cuenta.- %s   Esatado Actual.-, %s", NumerodeCuenta,Estado));
         System.out.println(String.format("Fecha De Creacion.- %s   Saldo Actual.-, %s", fechacreacion,Saldo,Saldo));
         System.out.println("<------------------------------------------------------------->");
     }
 
-
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     

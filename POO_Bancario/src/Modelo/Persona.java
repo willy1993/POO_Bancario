@@ -25,7 +25,7 @@ public abstract class Persona {
 
     
     public void mostrar() {
-        System.out.println(String.format("El Titular De La Cuenta"));        
+        System.out.println(String.format("El Titular De La Cuenta -->%s",id));        
         System.out.println(String.format("Nombre Es.- %s, %s   #C.I.-, %s", nombre,apellido,cedula));
     }
     
@@ -60,6 +60,13 @@ public abstract class Persona {
     }
 
     public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public Persona(int id, String cedula, String nombre, String apellido) {
+        this.id = id;
+        this.cedula = cedula;
+        this.nombre = nombre;
         this.apellido = apellido;
     }
     
