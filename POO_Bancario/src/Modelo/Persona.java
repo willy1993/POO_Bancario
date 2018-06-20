@@ -29,7 +29,7 @@ public abstract class Persona {
         System.out.println(String.format("Nombre Es.- %s, %s   #C.I.-, %s", nombre,apellido,cedula));
     }
     
-    //public abstract void saludar();
+
 
     public int getId() {
         return id;
